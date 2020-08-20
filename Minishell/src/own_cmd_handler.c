@@ -14,7 +14,8 @@ int     own_cmd_handler(char **parsed)
     list_of_cmds[2] = "help";
     list_of_cmds[3] = "hello";
 
-    for (i = 0; i < num_of_cmds; i++)
+    i = 0;
+    while (i < num_of_cmds)
     {
         int	ft_strcmp(const char *s1, const char *s2);
         if (ft_strcmp(parsed[0], list_of_cmds[i]) == 0)
@@ -22,6 +23,7 @@ int     own_cmd_handler(char **parsed)
             switch_own_arg = i + 1;
             break;
         }
+        i++;
     }
 
     switch (switch_own_arg)

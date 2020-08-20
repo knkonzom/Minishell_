@@ -15,9 +15,9 @@ int     main()
             continue;
         exec_flag = process_string(input_string, parsed_args, parsed_args_piped);
         if (exec_flag == 1)
+        {
             exec_args(parsed_args);
-        if (exec_flag == 2)
-            exec_piped_args(parsed_args, parsed_args_piped);
+        }
     }
     return (0);
 }

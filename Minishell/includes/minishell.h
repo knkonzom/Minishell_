@@ -17,7 +17,6 @@
 #define clear() ft_putstr("\033[H\033[J")
 
 void    exec_args(char **parsed);
-void    exec_piped_args(char **parsed, char **parsedpipe);
 void    init_shell();
 void    open_help();
 void    parse_space(char *str, char **parsed);
