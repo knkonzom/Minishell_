@@ -28,7 +28,7 @@ size_t	ft_strlen(const char *s);
 
 int     own_cmd_handler(char **parsed);
 int     parse_pipe(char *str, char **piped_str);
-int     process_string(char *str, char **parsed, char** parsedpipe);
+int     process_string(char *str, char **parsed);
 int     take_input(char *str);
 
 char	*ft_strcpy(char *dst, const char *src);
